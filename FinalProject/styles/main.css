@@ -1,0 +1,156 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+	background-color: #EEE;
+	color: #000;
+	font-family: 'Lato', Arial, sans-serif;
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+h1, h2, h3
+{
+	color: #000;
+	font-family: 'Roboto', Tahoma, sans-serif;
+	text-align: center;
+}
+#logo
+{
+	width: auto;
+	height: 100px;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	background-color: #DDD;
+	border: 3px solid #CCC;
+	border-radius: 10px;
+	transition-duration: 0.3s;
+}
+#logo:hover
+{
+	border: 3px solid #666;
+	background-color: #999;
+}
+.footer
+{
+	text-align: center;
+	font-size: 10pt;
+}
+a
+{
+	color: #336;
+	text-decoration: none;
+	transition-duration: 0.3s;
+}
+a:hover
+{
+	color: #66A;
+}
+a:active
+{
+	color: #99F;
+}
+a:visted
+{
+	color: #33A;
+}
+#navigation
+{
+	text-align: center;
+	font-family: 'Roboto', Tahoma, sans-serif;
+	font-size: 12pt;
+	margin: 10px;
+	background-color: #DDD;
+	border: 3px solid #CCC;
+	border-radius: 10px;
+}
+.content
+{
+	margin: 10px;
+	background-color: #DDD;
+	border: 3px solid #CCC;
+	border-radius: 10px;
+}
+.content p
+{
+	margin: 10px;
+}
+.footer
+{
+	margin: 10px;
+	background-color: #DDD;
+	border: 3px solid #CCC;
+	border-radius: 10px;
+	font-size: 10pt;
+	font-style: italic;
+}
+figure
+{
+	text-align: center;
+	font-style: italic;
+	font-size: 8pt;
+}
+input[type=text], input[type=email], textarea
+{
+	border: 3px solid #CCC;
+	transition-duration: 0.3s;
+	background-color: #EEE;
+	font-family: 'Lato', Arial, sans-serif;
+	width: 100%;
+	border-radius: 10px;
+	padding: 5px;
+}
+input[type=text]:focus, input[type=email]:focus, button:active, button:focus, textarea:focus
+{
+	outline: none;
+	background-color: #CCC;
+	border-color: #AAA;
+}
+input[type=text]:hover, input[type=email]:hover, button:hover, textarea:hover
+{
+	border-color: #999;
+	background-color: #CCC;
+}
+button
+{
+	display: inline-block;
+	text-decoration: none;
+	border: 3px solid #CCC;
+	background-color: #EEE;
+	font-family: 'Lato', Arial, sans-serif;
+	padding: 3px 30px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	transition-duration: 0.3s;
+}
+#eventTable
+{
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: 'Lato', Arial, sans-serif;
+	border-collapse: collapse;
+}
+#eventTable th
+{
+	font-weight: bold;
+	text-align: center;
+	font-size: 16pt;
+}
+#eventTable th, #eventTable td
+{
+	padding: 10px;
+	border-bottom: 3px solid #666;
+}
+#eventTable tr:nth-child(even)
+{
+	background-color: #CCC;
+}
+.largeImages::after
+{
+	content: "";
+	clear: both;
+	display: table;
+}

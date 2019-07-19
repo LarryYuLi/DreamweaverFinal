@@ -1,0 +1,42 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">      <form id="contactForm" onSubmit="return Validate()">
+      <table summary="Contact form." width="95%" style="margin-right: auto; margin-left: auto;" cellspacing="10px">
+      <tr>
+      <td style="text-align: right;">*First Name:</td>
+      <td><input type="text" name="firstName" required /></td>
+      <td style="text-align: right;">Middle Initial:</td>
+      <td><input type="text" name="middleInitial" /></td>
+      <td style="text-align: right;">*Last Name:</td>
+      <td><input type="text" name="lastName" required /></td>
+      </tr>
+      <tr>
+      <td style="text-align: right;">*Email Address:</td>
+      <td colspan="3"><input type="email" name="email" required /></td>
+      <td style="text-align: right;">Phone Number:</td>
+      <td><input type="text" name="phone" /></td>
+      </tr>
+      <tr>
+      <td style="text-align: right;">Address:</td>
+      <td colspan="5"><input type="text" name="address" /></td>
+      </tr>
+      <tr>
+      <td style="text-align: right;">Apartment / Building:</td>
+      <td colspan="5"><input type="text" name="apartment" /></td>
+      </tr>
+      <tr>
+      <td style="text-align: right;">City:</td>
+      <td><input type="text" name="city" /></td>
+      <td style="text-align: right;">State:</td>
+      <td><input type="text" name="state" /></td>
+      <td style="text-align: right;">Zip Code:</td>
+      <td><input type="text" name="zip" /></td>
+      </tr>
+      <tr>
+      <td style="text-align: right;">*Comments:</td>
+      <td colspan="5"><textarea rows="4" form="contactForm" name="comments" required></textarea></td>
+      </tr>
+      <tr>
+      <td align="center" colspan="3"><button type="reset" form="contactForm" value="Reset">Reset</button></td>
+      <td align="center" colspan="3"><button type="submit" form="contactForm" value="Submit">Submit</button></td>
+      </tr>
+      </table>
+      </form>

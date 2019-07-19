@@ -1,0 +1,184 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/main_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+	<title>David Mills - Contact Me</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+<link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet">
+<link href="styles/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <!-- start .container -->
+    <div class="container">
+	<!-- start .header -->
+	<div class="header">
+    	<a href="index.html">
+    		<img src="images/logo.png" alt="Insert Logo Here" name="Insert_logo" id="logo"/>
+        </a> 
+    </div>
+    <!-- end .header -->
+    <!-- start #navigation -->
+    <div id="navigation">
+    	<p>
+        	<a href="index.html">
+            	Home
+            </a>
+            &nbsp;-&nbsp;
+			<a href="personal.html">
+            	Personal
+            </a>
+            &nbsp;-&nbsp;
+            <a href="assets.html">
+            	Assets
+            </a>
+            &nbsp;-&nbsp;
+            <a href="artist.html">
+            	Monthly Artist
+            </a>
+            &nbsp;-&nbsp;
+            <a href="events.html">
+            	Events
+            </a>
+            &nbsp;-&nbsp;
+            <a href="contact.html">
+                Contact Me
+            </a>
+        </p>
+    </div>
+    <!-- end #navigation -->
+    <!-- start .content -->
+  	<div class="content">
+	<!-- InstanceBeginEditable name="content" -->
+  	  <h1>Contact Me</h1>
+      <p style="text-align: center;">If you are interested in getting in contact with me electronically, please fill out the form below.</p>
+      <p style="text-align: center; font-size: 8pt; font-style: italic;">* Indicates Required Field</p>
+      <!-- #BeginLibraryItem "/Library/ContactForm.lbi" -->
+      <form id="contactForm" onSubmit="return Validate()">
+        <table summary="Contact form." width="95%" style="margin-right: auto; margin-left: auto;" cellspacing="10px">
+          <tr>
+            <td style="text-align: right;">*First Name:</td>
+            <td><input type="text" name="firstName" required /></td>
+            <td style="text-align: right;">Middle Initial:</td>
+            <td><input type="text" name="middleInitial" /></td>
+            <td style="text-align: right;">*Last Name:</td>
+            <td><input type="text" name="lastName" required /></td>
+          </tr>
+          <tr>
+            <td style="text-align: right;">*Email Address:</td>
+            <td colspan="3"><input type="email" name="email" required /></td>
+            <td style="text-align: right;">Phone Number:</td>
+            <td><input type="text" name="phone" /></td>
+          </tr>
+          <tr>
+            <td style="text-align: right;">Address:</td>
+            <td colspan="5"><input type="text" name="address" /></td>
+          </tr>
+          <tr>
+            <td style="text-align: right;">Apartment / Building:</td>
+            <td colspan="5"><input type="text" name="apartment" /></td>
+          </tr>
+          <tr>
+            <td style="text-align: right;">City:</td>
+            <td><input type="text" name="city" /></td>
+            <td style="text-align: right;">State:</td>
+            <td><input type="text" name="state" /></td>
+            <td style="text-align: right;">Zip Code:</td>
+            <td><input type="text" name="zip" /></td>
+          </tr>
+          <tr>
+            <td style="text-align: right;">*Comments:</td>
+            <td colspan="5"><textarea rows="4" form="contactForm" name="comments" required></textarea></td>
+          </tr>
+          <tr>
+            <td align="center" colspan="3"><button type="reset" form="contactForm" value="Reset">Reset</button></td>
+            <td align="center" colspan="3"><button type="submit" form="contactForm" value="Submit">Submit</button></td>
+          </tr>
+        </table>
+      </form>
+    <!-- #EndLibraryItem -->
+<p style="text-align: center;">If you would rather contact me regularly, my information is below.</p>
+      <p>David M. Mills</p>
+      <p><a href="mailto:millsd2423@forsythtech.edu">millsd2423@forsythtech.edu</a></p>
+      <p>(252) 702-6250</p>
+      <p>6133 Cooper Creek St.</p>
+      <p>Fort Worth, TX 76179</p>
+      <script type="text/javascript">
+	  function Validate()
+	  {
+		  var middleInitial = document.getElementsByName("middleInitial")[0].value;
+		  var phoneNumber = document.getElementsByName("phone")[0].value;
+		  var address = document.getElementsByName("address")[0].value;
+		  var apartment = document.getElementsByName("apartment")[0].value;
+		  var city = document.getElementsByName("city")[0].value;
+		  var state = document.getElementsByName("state")[0].value;
+		  var zip = document.getElementsByName("zip")[0].value;
+		  var stateList = new Array("AK","AL","AR","AZ","CA","CO","CT","DC","DE","FL","GA","GU","HI","IA","ID", "IL","IN","KS","KY","LA","MA","MD","ME","MH","MI","MN","MO","MS","MT","NC","ND","NE","NH","NJ","NM","NV","NY", "OH","OK","OR","PA","PR","PW","RI","SC","SD","TN","TX","UT","VA","VI","VT","WA","WI","WV","WY");
+		  if (middleInitial && (middleInitial.length != 1 || isNaN(middleInitial) == false))
+		  {
+			  alert("Middle initial is invalid! Try again.");
+			  return false;
+		  }
+		  if (phoneNumber && (isNaN(phoneNumber) == true || !phoneNumber.match(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im)))
+		  {
+			  alert("Phone number is in invalid format! Try again.");
+			  return false;
+		  }
+		  if (address || apartment || city || state || zip)
+		  {
+			  if (!address || !city || !state || !zip)
+			  {
+				  alert("The address is missing information! Try again.");
+				  return false;
+			  }
+			  if (!(address.length > 2))
+			  {
+				  alert("Address is invalid! Try again.");
+				  return false;
+			  }
+			  if (!(city.length > 1))
+			  {
+				  alert("City is invalid! Try again.");
+				  return false;
+			  }
+			  if (!stateList.includes(state))
+			  {
+				  alert("State is invalid! Example: TX, NC, etc.");
+				  return false;
+			  }
+			  if (isNaN(zip) || zip.length != 5 || zip - 9999 < 0)
+			  {
+				  alert("Zip code is invalid! Try again.");
+				  return false;
+			  }
+		  }
+		  var form = document.getElementById("contactForm");
+		  var comments = document.getElementsByName("comments")[0].value;
+		  var action = "mailto:millsd2423@forsythtech.edu?subject=Comments%20and%20Concerns&amp;body=";
+		  var command = comments.replace(/[^a-zA-Z 0-9]+/g,'');
+		  command = command.replace(/ /g, "%20");
+		  form.action = action.concat(command);
+		  return true;
+	  }
+	  </script>
+  	<!-- InstanceEndEditable -->
+    </div>
+    <!-- end .content -->
+    <!-- start .footer -->
+  	<div class="footer">
+    	<p>
+        	&copy; David Mills - Written for Forsyth Technical Community College WEB-140
+        </p>
+        <p>
+        	Created my free logo at LogoMakr.com 
+        </p>
+    </div>
+    <!-- end .footer -->
+  </div>
+  <!-- end .container -->
+</body>
+<!-- InstanceEnd --></html>

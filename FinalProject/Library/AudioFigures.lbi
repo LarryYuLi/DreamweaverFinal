@@ -1,0 +1,8 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><figure style="width: 100%;">
+      	<audio controls src="audio/PanningExample-NoPan.mp3">Your browser does not support the <code>audio</code> element.</audio>
+        <figcaption>A simple musical track that has two lead guitars in a harmony with a backing rhythm guitar track. There is no panning in the track.</figcaption>
+      </figure>
+      <figure style="width: 100%;">
+      	<audio controls src="audio/PanningExample.mp3">Your browser does not support the <code>audio</code> element.</audio>
+        <figcaption>The same track but with panned backing rhythm guitars (after recording a second backing track playing the same rhythm) and panned harmonic melody leads.</figcaption>
+      </figure>

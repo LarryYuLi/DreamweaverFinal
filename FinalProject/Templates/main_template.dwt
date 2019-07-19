@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+	<title>David Mills - </title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet">
+<link href="../styles/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <!-- start .container -->
+    <div class="container">
+	<!-- start .header -->
+	<div class="header">
+    	<a href="../index.html">
+    		<img src="../images/logo.png" alt="Insert Logo Here" name="Insert_logo" id="logo"/>
+        </a> 
+    </div>
+    <!-- end .header -->
+    <!-- start #navigation -->
+    <div id="navigation">
+    	<p>
+        	<a href="../index.html">
+            	Home
+            </a>
+            &nbsp;-&nbsp;
+			<a href="../personal.html">
+            	Personal
+            </a>
+            &nbsp;-&nbsp;
+            <a href="../assets.html">
+            	Assets
+            </a>
+            &nbsp;-&nbsp;
+            <a href="../artist.html">
+            	Monthly Artist
+            </a>
+            &nbsp;-&nbsp;
+            <a href="../events.html">
+            	Events
+            </a>
+            &nbsp;-&nbsp;
+            <a href="../contact.html">
+                Contact Me
+            </a>
+        </p>
+    </div>
+    <!-- end #navigation -->
+    <!-- start .content -->
+  	<div class="content">
+	<!-- TemplateBeginEditable name="content" -->
+  	  <h1>Title</h1>
+      <p>Content</p>
+  	<!-- TemplateEndEditable -->
+    </div>
+    <!-- end .content -->
+    <!-- start .footer -->
+  	<div class="footer">
+    	<p>
+        	&copy; David Mills - Written for Forsyth Technical Community College WEB-140
+        </p>
+        <p>
+        	Created my free logo at LogoMakr.com 
+        </p>
+    </div>
+    <!-- end .footer -->
+  </div>
+  <!-- end .container -->
+</body>
+</html>
